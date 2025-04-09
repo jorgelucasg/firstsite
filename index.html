@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technology blog with the latest tech news">
+    <title>TechNews - Technology Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">TechNews</h1>
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Open menu">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- Inicio -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Latest tech news</h2>
+                <p>Stay updated with technology, AI, programming and more.</p>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search news...">
+                    <button id="search-btn">Search</button> <!-- Busca das noticias -->
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news-section">
+            <div class="container">
+                <h2>Latest Tech News</h2>
+                <div class="news-grid" id="news-container">
+                    <!-- javascript vai carregar as noticias aqui -->
+                </div>
+                <button id="load-more" class="load-more-btn">Load more news</button>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About the Blog</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>TechNews is a blog dedicated to bringing the latest news and trends in the technology world. Our goal is to keep you informed about the technological advances that are shaping the future.</p>
+                        <p>We use reliable news APIs to ensure our content is always up-to-date and relevant.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/second-background.jpg" alt="TechNews team working" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send via WhatsApp</button>
+                </form>
+                <div id="form-success" class="success-message" style="display: none;">
+                    Redirecting to WhatsApp...
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer"> 
+        <div class="container">
+            <p>&copy; 2025 TechNews - All rights reserved</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><span>Facebook</span></a>
+                <a href="#" aria-label="Twitter"><span>X</span></a>
+                <a href="#" aria-label="Instagram"><span>Instagram</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
