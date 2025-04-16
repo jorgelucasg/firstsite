@@ -42,8 +42,8 @@ Devido a limitações da NewsAPI:
 - Buscas em português (`/top-headlines?language=pt`) vai retornar vazio
 - Para conteúdo garantido em PT-BR, considere:
   - Usar outras APIs (como GNews)
-  - Implementar scraping de portais brasileiros (com cautela legal)
-  - Manter o fallback para inglês como demonstrado
+  - Implementar portais brasileiros 
+  - Manter o site em inglês como demonstrado
 
 Optamos por manter o site em inglês porque:
 - Cobertura da API: /top-headlines?category=technology retorna conteúdo majoritariamente em inglês
